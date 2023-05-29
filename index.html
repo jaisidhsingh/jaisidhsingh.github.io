@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaisidh Singh</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+	  scroll-behavior: smooth;
+    }
+
+	#publications {
+		padding-top: 50px;
+	}
+
+	#projects {
+		padding-top: 50px;
+	}
+
+	#extracurricular {
+		padding-bottom: 50px;
+	}
+    .card {
+      border: 2px solid darkgrey;
+      border-radius: 10px;
+    }
+	.card-body-left {
+      display: flex;
+      align-items: center;
+	  padding-right: 20px;
+    }
+    
+    .card-image {
+      width: 280px;
+	  height: 180px;
+      object-fit: fill;
+      border-radius: 4px;
+    }
+
+	.card-title {
+      margin-bottom: 0;
+	  padding-left: 50;
+    }
+	.card-text {
+		margin-bottom: 0;
+	}
+	.my-image {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
+	.gmail {
+		border-radius: 50%;
+		width: 30px;
+		height: 25px;
+	}
+	.twitter {
+		border-radius: 50%;
+		width: 30px;
+		height: 25px;
+	}
+	.linkedin {
+		border-radius: 50%;
+		width: 30px;
+		height: 25px;
+	}
+	.content {
+      margin-top: 60px; /* Add margin to push content below fixed navbar */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#top">Jaisidh Singh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<a class="navbar-brand" href="#publications">Publications</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<a class="navbar-brand" href="#projects">Projects</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<a class="navbar-brand" href="#extracurricular">Extras</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="container text-left content" style="padding-top: 30px;">
+	<!-- <div id="me"> -->
+ 	<center> 
+	<img src="./assets/me.png" class="my-image">
+	<br><br>  
+	<h1>Jaisidh Singh</h1>
+    <p class="lead">Deep Learning Researcher</p>
+    <a href="mailto:singh.118@iitj.ac.in"><img src="assets/email.png" class="gmail"></a> 
+	<a href="https://github.com/jaisidhsingh"><img src="assets/github.png" class="twitter"></a> 
+	<a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/"><img src="assets/linkedin.png" class="linkedin"></a>
+	<br><br>
+    <p>I am a self-driven, highly motivated undergaduate at <a href="https://iitj.ac.in/">IIT Jodhpur</a>. 
+		Currently a research intern at <a href="http://iab-rubric.org/">IAB Lab IIT Jodhpur</a>, and at 
+		<a href="https://www.bosch.com/research/about-research/research-locations/">Bosch Research Bangalore</a>, 
+		I aim to do impactful research in deep learning. I have strong hands-on in visual-language recognition, 
+		and generative models. I am looking to work in these domains and to build fruitful, long-lasting collaborations, 
+		producing high-quality research work and publications.</p>
+    </center>
+	<!-- </div> -->
+	<div id="publications">
+	<h2><center>Publications</center></h2>
+	<br>
+	</div>
+	<div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/pubs/idprov.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>IdProv: Identity-Based Provenance for Synthetic Image Generation</b></h5>
+			<p class="card-text">Harshil Bhatia*, <b>Jaisidh Singh*</b>, Gaurav Sangwan, Aparna Bharati, Richa Singh, Mayank Vatsa</p>
+			<p class="card-text"><i>Accepted: AAAI Student Abstracts 2023</i>
+			[<a href="https://drive.google.com/file/d/1dInS1bwBerlcn9usIehFQQ7MNHX6IjAa/view?usp=sharing">Poster</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+    <br><br>
+	<!-- ----------------------- PROJECTS --------------------------------------- -->
+	<div id="projects">
+	<h2><center>Projects</center></h2>
+	<br>
+    <div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/projects/uvsumm.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>
+				UV-Summ: Frame Scoring Using UNet-like Transformers for Deep Video Summarization
+			</b></h5>
+			<p class="card-text">My venture into video-based computer vision, starting with 
+				an architecture inspired by UNet for scoring CLIP frame features to extract key-frames.
+				Includes a zero-shot text summarizer using CLIP embeddings of the extracted key-frames. 
+				Presented as the course project for Deep Learning 2023 @ IIT Jodhpur</p>
+			<p class="card-text">[<a href="https://github.com/jaisidhsingh/Deep-Video-Summarization">Code</a>]
+				[<a href="https://drive.google.com/file/d/1BYx8bKjibz_X-srmgWK0ktgvjq72g-k8/view?usp=sharing">Report</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+	<!-- ------------------------------------------ -->
+	<div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/projects/multisumm.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>Beyond Token Limits: Inference-time Optimization for Large Document Summarization</b></h5>
+			<p class="card-text">A high-utility project for the summarization of large articles, in a purely inference-based, plug-and-play manner.
+				Presented as the DL-Ops project for DL 2023 @ IIT Jodhpur</p>
+<p class="card-text">[<a href="https://github.com/jaisidhsingh/Multi-Article-Summarization">Code</a>]
+				[<a href="https://drive.google.com/file/d/1wGMoGhR6oYFAohU4RofbbstOK3jwsD1D/view?usp=sharing">Report</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+	<!-- --------------------------------- -->
+     <div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/projects/lowres.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>LowResFormer: A Transformer for Low Resolution Fine Grained Image Classification</b></h5>
+			<p class="card-text">A vision transformer architecture developed as my first self-research endeavour. 
+			Utilized multimodal inputs of images along with their attribute information, to classify images.
+			Outperformed previous approached on the AwA2 dataset, in all resolutions.</p>
+			<p>[<a href="https://github.com/jaisidhsingh/LowResFormer">Code</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+	<!-- ----------------------------------------------- -->
+     <div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/projects/dqn.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>Deep RL: Q-Agents on Gym and Custom Environments</b></h5>
+			<p class="card-text">A project of self-implemented RL algorithms on OpenAI's Gym to gain an understanding of this field.
+				Used this learning to apply DQN for the Course Project for Advanced Artificial Intelligence 2023 @ IIT Jodhpur.</p>
+			<p>[<a href="https://github.com/jaisidhsingh/Deep-Q-Learning">Code</a>]
+				[<a href="https://drive.google.com/file/d/1_ihKrfvfUhdPJ9hL7Z-8BUpYd7ZZLYRT/view?usp=sharing">Report</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div> 
+	</div>  
+<!-- ------------------------------------------------ -->
+<br><br>
+<div id="extracurricular"><center><h2>Extras</h2><br>
+<p>I am an avid reader, and greatly enjoy mythological and philosophical works.
+	I am also an experienced guitarist and vocalist. I have performed at large-scale events, 
+	and have guided 3 generations of musicians as a part of 
+	<a href="https://www.instagram.com/sangam_iitj/?hl=en">Sangam Music Society</a> of IIT Jodhpur. 
+	I have contributed to published music as a composer and lyricist 
+	with <a href="https://open.spotify.com/artist/2ROjBiS2hPaSFWHDXEKA6N?si=sqYkeYCwSkqhRX6_0YpAYQ">Rajvir Singh Gill</a>. 
+	Some of my original works shall soon be on Spotify (hopefully).</p></center></div>
+<br><br>
+</body>
+</html>
