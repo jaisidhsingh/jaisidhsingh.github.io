@@ -30,6 +30,8 @@
       border: 1px solid grey;
       border-radius: 10px;
     }
+
+	
 	.card-body-left {
       display: flex;
       align-items: center;
@@ -73,6 +75,58 @@
 	.content {
       margin-top: 60px; /* Add margin to push content below fixed navbar */
     }
+
+	.container {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#projects > .card {
+		margin-bottom: 4vh;
+	}
+
+	@media (orientation: portrait) {
+		body {
+			font-size: min(1.5rem, 4.5vw);
+		}
+
+		.container {
+			padding-right: 5vw;
+			padding-left: 5vw;
+		}
+
+		.navbar {
+			display: none;
+		}
+
+		.content {
+			margin-top: 5vh;
+		}
+
+		.pubs-table > tbody > tr {
+			display: flex;
+			flex-direction: column;
+			gap: 1vh;
+		}
+
+		.card-body-left {
+			justify-content: center;
+			padding-right: 0;
+		}
+
+		.card-image {
+			width: 100%;
+			height: auto;
+		}
+
+		#projects {
+			padding-top: 0;
+		}
+
+		#projects > .card {
+			margin-bottom: 4vh;
+		}
+	}
   </style>
 </head>
 <body>
