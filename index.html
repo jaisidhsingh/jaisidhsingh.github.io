@@ -23,15 +23,19 @@
 		padding-top: 50px;
 	}
 
+	#media {
+		padding-top: 50px;
+	}
+
 	#extracurricular {
 		padding-bottom: 50px;
 	}
+
     .card {
       border: 1px solid grey;
       border-radius: 10px;
     }
 
-	
 	.card-body-left {
       display: flex;
       align-items: center;
@@ -104,6 +108,11 @@
 		}
 
 		.pubs-table > tbody > tr {
+			display: flex;
+			flex-direction: column;
+			gap: 1vh;
+		}
+		.media-table > tbody > tr {
 			display: flex;
 			flex-direction: column;
 			gap: 1vh;
@@ -189,6 +198,26 @@
 			<p class="card-text">Harshil Bhatia*, <b>Jaisidh Singh*</b>, Gaurav Sangwan, Aparna Bharati, Richa Singh, Mayank Vatsa</p>
 			<p class="card-text"><i>Accepted: AAAI Student Abstracts 2023</i> [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26942">Paper</a>]
 			[<a href="https://drive.google.com/file/d/1dInS1bwBerlcn9usIehFQQ7MNHX6IjAa/view?usp=sharing">Poster</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+    <br><br>
+	<!-- ----------------------- MEDIA --------------------------------------- -->
+	<div id="media">
+	<h2><center>Media</center></h2>
+	<br>
+	</div>
+	<div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="media-cover">
+			<div class="card-body-left">
+				<img src="assets/blogs/rl.png" class="card-image" style="width: fit-content;">
+			</div>
+		</td>
+		<td class="media-description">
+			<h5 class="card-title"><b>DeepMind x UCL Reinforcement Learning</b></h5>
+			<p class="card-text">[<a href="https://jaisidhsingh.notion.site/Reinforcement-Learning-75c317c467f24c77bca20c1ce3980081?pvs=4">Blog</a>]</p>
 		</td></tr></table>
 	  </div>
     </div>
