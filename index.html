@@ -23,15 +23,19 @@
 		padding-top: 50px;
 	}
 
+	#media {
+		padding-top: 50px;
+	}
+
 	#extracurricular {
 		padding-bottom: 50px;
 	}
+
     .card {
       border: 1px solid grey;
       border-radius: 10px;
     }
 
-	
 	.card-body-left {
       display: flex;
       align-items: center;
@@ -108,6 +112,11 @@
 			flex-direction: column;
 			gap: 1vh;
 		}
+		.media-table > tbody > tr {
+			display: flex;
+			flex-direction: column;
+			gap: 1vh;
+		}
 
 		.card-body-left {
 			justify-content: center;
@@ -126,6 +135,10 @@
 		#projects > .card {
 			margin-bottom: 4vh;
 		}
+
+		#media > .card{
+			margin-bottom: 4vh;
+		}
 	}
   </style>
 </head>
@@ -139,15 +152,20 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+	<a class="navbar-brand" href="#media">Media</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 	<a class="navbar-brand" href="#projects">Projects</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-	<a class="navbar-brand" href="#extracurricular">Extras</a>
+	<!-- <a class="navbar-brand" href="https://drive.google.com/file/d/1uN5NtLg9PcrHn2j-Sup7XmxZNVHll4Kn/view?usp=sharing">CV</a> -->
+	<a class="navbar-brand" href="./assets/cv.pdf">CV</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-	<a class="navbar-brand" href="https://drive.google.com/file/d/1uN5NtLg9PcrHn2j-Sup7XmxZNVHll4Kn/view?usp=sharing">CV</a>
+	<a class="navbar-brand" href="#extracurricular">Extras</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -165,11 +183,10 @@
 	<a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/"><img src="assets/linkedin.png" class="linkedin"></a>
 	<br><br>
     <p>I am an undergraduate researcher at <a href="https://iitj.ac.in/">IIT Jodhpur</a>. 
-		Currently a research intern at <a href="http://iab-rubric.org/">IAB Lab IIT Jodhpur</a>, and at 
-		<a href="https://www.bosch.com/research/about-research/research-locations/">Bosch Research Bangalore</a>, 
-		I aim to do impactful research in deep learning. I have strong hands-on in visual-language recognition, 
-		and generative models. I am looking to work in these domains and to build fruitful, long-lasting collaborations, 
-	    producing high-quality research work and publications.</p>
+		Currently a research intern at <a href="https://www.bosch.com/research/about-research/research-locations/">Bosch Research Bangalore</a>
+		and <a href="http://iab-rubric.org/">Trusted AI Lab @ IIT Jodhpur</a>, 
+		I aim to leverage a <i>multidisciplinary approach</i> to research in deep learning. My experience and interests lie in <i>computer vision, interpretability, foundation models</i>, and <i>NLP</i>. 
+		Recent advances in <i>reinforcement learning</i> have also captured my interest. I am looking to work in these domains and to build fruitful, long-lasting collaborations, producing high-quality research work and publications.</p>
     </center>
 	<!-- </div> -->
 	<div id="publications">
@@ -189,6 +206,27 @@
 			<p class="card-text">Harshil Bhatia*, <b>Jaisidh Singh*</b>, Gaurav Sangwan, Aparna Bharati, Richa Singh, Mayank Vatsa</p>
 			<p class="card-text"><i>Accepted: AAAI Student Abstracts 2023</i> [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26942">Paper</a>]
 			[<a href="https://drive.google.com/file/d/1dInS1bwBerlcn9usIehFQQ7MNHX6IjAa/view?usp=sharing">Poster</a>]</p>
+		</td></tr></table>
+	  </div>
+    </div>
+    <br><br>
+	<!-- ----------------------- MEDIA --------------------------------------- -->
+	<div id="media">
+	<h2><center>Media</center></h2>
+	<br>
+	</div>
+	<div class="card">
+      <div class="card-body">
+		<table class="pubs-table"><tr>
+		<td class="pubs-cover">
+			<div class="card-body-left">
+				<img src="assets/blogs/rl.png" class="card-image">
+			</div>
+		</td>
+		<td class="pubs-description">
+			<h5 class="card-title"><b>Concepts of Reinforcement Learning</b></h5>
+			<p class="card-text">A presentation of my notes and tinkering with the <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm">DeepMind x UCL RL course</a>. 
+			I hope to aid the learning of others stepping into the wonderful field of RL. [<a href="https://jaisidhsingh.notion.site/Reinforcement-Learning-75c317c467f24c77bca20c1ce3980081?pvs=4">Blog</a>]</p>
 		</td></tr></table>
 	  </div>
     </div>
