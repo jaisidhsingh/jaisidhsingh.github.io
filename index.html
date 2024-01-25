@@ -1,354 +1,280 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaisidh Singh</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-	  scroll-behavior: smooth;
-    }
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	#publications {
-		padding-top: 50px;
-	}
+    <title>Jaisidh Singh</title>
 
-	#projects {
-		padding-top: 50px;
-	}
-
-	#media {
-		padding-top: 50px;
-	}
-
-	#extracurricular {
-		padding-bottom: 50px;
-	}
-
-    .card {
-      border: 1px solid grey;
-      border-radius: 10px;
-    }
-
-	.card-body-left {
-      display: flex;
-      align-items: center;
-	  padding-right: 20px;
-    }
+    <meta name="author" content="Jaisidh Singh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
-    .card-image {
-      width: 280px;
-	  height: 180px;
-      object-fit: fill;
-      border-radius: 4px;
-    }
+  </head>
 
-	.card-title {
-      margin-bottom: 0;
-	  padding-left: 50;
-    }
-	.card-text {
-		margin-bottom: 0;
-	}
-	.my-image {
-		border-radius: 50%;
-		width: 200px;
-		height: 200px;
-	}
-	.gmail {
-		border-radius: 50%;
-		width: 30px;
-		height: 25px;
-	}
-	.twitter {
-		border-radius: 50%;
-		width: 30px;
-		height: 25px;
-	}
-	.linkedin {
-		border-radius: 50%;
-		width: 30px;
-		height: 25px;
-	}
-	.content {
-      margin-top: 60px; /* Add margin to push content below fixed navbar */
-    }
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Jaisidh Singh
+                </p>
+                <p>
+                  I am a final-year AI and Data Science undergraduate at <a href="https://iitj.ac.in/">IIT Jodhpur</a> and a researcher at <a href="http://iab-rubric.org/">Trusted AI Lab</a> with <a href="http://home.iitj.ac.in/~richa/">Dr. Richa Singh</a>, <a href="http://home.iitj.ac.in/~mvatsa/">Dr. Mayank Vatsa</a>, and <a href="https://www.aparnabharati.com/">Dr. Aparna Bharati</a>. Here, I have worked on <strong>privacy in face image generation</strong>, and my current research is on <strong>robust compositionality in VLMs</strong>.<br><br> 
+                  I have also interned for <a href="https://www.bosch-ai.com/">Bosch AI Research India</a> where I worked with <a href="https://www.bosch.com/research/about-bosch-research/our-research-experts/amit-kale/">Dr. Amit Arvind Kale</a>'s team on <strong>zero-shot detection and interpretation of systematic errors in segmentation</strong>. My work at Bosch has also touched upon <strong>inpainting with latent diffusion models, prompt analysis for multimodal image retrieval</strong>.<br><br> 
+		              <!-- My aim is to work for multidisciplinary research labs at the forefront of AI research. My experience and interests lie at the intersection of <i style="color:seagreen ;">computer vision</i> and <i style="color: salmon;">responsible AI</i>.  -->
+		              <!-- I am looking to work in these domains and to build fruitful, long-lasting collaborations, producing high-quality research work and publications. -->
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:singh.118@iitj.ac.in">Email</a> &nbsp;/&nbsp;
+                  <a href="assets/cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/jaisidhsingh">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jaisidhsingh/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="assets/me.png">
+              </td>
+            </tr>
+          </tbody></table>
+          <!-- ================================================= RESEARCH================================ -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in <span style="color: crimson;">multimodal foundation models</span>, <span style="color: seagreen;">interpretability</span>, and <span style="color: blueviolet;">responsible AI</span>. My research aims at making deep learning models more reliable across their applications in image generation, segmentation, and compositional understanding.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-	.container {
-		margin-right: 0;
-		margin-left: 0;
-	}
+<!-- ============================================= PUBLICATIONS ================================================== -->
 
-	#projects > .card {
-		margin-bottom: 4vh;
-	}
+    <!-- SYNTHPROV -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/pubs/synthprov.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:top">
+          <br><span class="papertitle">SynthProv: Interpretable Framework for Profiling Identity Leakage</span>
+        <br>
+        <strong>Jaisidh Singh</strong>,
+        <a href="">Harshil Bhatia</a>,
+        <a href="">Mayank Vatsa</a>,
+        <a href="">Richa Singh</a>,
+        <a href="">Aparna Bharati</a>
+        <br>
+        <em>WACV</em>, 2024
+        <br>
+        <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Singh_SynthProv_Interpretable_Framework_for_Profiling_Identity_Leakage_WACV_2024_paper.pdf">Paper</a>
+        /
+        <a href="https://drive.google.com/file/d/1RKdJTVw_gSOS-R2xAoaK9yQbGA1FmVyv/view?pli=1">Poster</a>
+        /
+        <a href="https://drive.google.com/file/d/1AinWiJWQW_Esj4_J_u-5q_xJFdv09ReT/view?pli=1">Slides</a>
+        <p></p>
+        <p>
+        GANs remember identities seen during training and leak those features across their representations <i>(identity leakage)</i>. Our framework makes it possible to detect and trace identity leakage across synthetic images and the GAN's latent space.
+        </p>
+      </td>
+    </tr>
+	
+    <!-- ID-PROV -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/pubs/idprov.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:100%;vertical-align:top">
+          <br><span class="papertitle">IdProv: Identity-Based Provenance for Synthetic Image Generation (Student Abstract)</span>
+        <br>
+        <a href="">Harshil Bhatia*</a>,
+        <strong>Jaisidh Singh*</strong>,
+        <!-- <a href="">Gaurav Sangwan</a>, -->
+        <a href="">Aparna Bharati</a>,
+        <a href="">Richa Singh</a>,
+        <a href="">Mayank Vatsa</a>
+        <br>
+        <em>AAAI</em>, 2023
+        <br>
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26942">Paper</a>
+        /
+        <a href="https://drive.google.com/file/d/1HsnUiVML0f1_B-lR1dfchsKEWSHQ18kZ/view?usp=sharing">Poster</a>
+        <p></p>
+        <p>
+          Highlights the motivation for identity leakage analysis and the threat it poses to privacy.
+        </p>
+      </td>
+    </tr>
+    </tbody></table>
+<!-- ================================= PROJECTS ============================= -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+                <p>
+                  Some of my self-projects can be found here.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-	@media (orientation: portrait) {
-		body {
-			font-size: min(1.5rem, 4.5vw);
-		}
+    <!-- DIFFUSION PROJECT -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/projects/diff.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:text-bottom">
+          <br><span class="papertitle">Latent Diffusion Inpainting</span>
+        <br>
+        <a href="https://github.com/jaisidhsingh/Diffusion-Tinkering">Code</a>
+        <p></p>
+        <p>
+          A modular, plug-and-play organization of my tinkering with diffusion. Flexible training and inference for DDPMs & LDMs on Stanford Cars, LSUN Dining Rooms, and Stable Diffusion inference. Adds grounded inpainting + generation Stable Diffusion and GLIGEN.
+        </p>
+      </td>
+    </tr>
 
-		.container {
-			padding-right: 5vw;
-			padding-left: 5vw;
-		}
+    <!-- UVSUMM -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/projects/uvsumm.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:text-bottom">
+          <br><span class="papertitle">UV-Summ: Transformer U-Net for Video Summarization</span>
+        <br>
+        <a href="https://github.com/jaisidhsingh/UVSumm-Video">Code</a>
+        <p></p>
+        <p>
+         An architecture inspired by UNet for scoring CLIP frame features to extract key-frames. Includes a zero-shot text summarizer using CLIP embeddings of the extracted key-frames. Our results outperformed recent approaches on the TvSumm datasets, and this was presented as the course project for Deep Learning 2023 @ IIT Jodhpur
+        </p>
+      </td>
+    </tr>
 
-		.navbar {
-			display: none;
-		}
+    <!-- CLUSTER_SUMM -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/projects/multisumm.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:text-bottom">
+          <br><span class="papertitle">Beyond Token Limits: Inference-time Optimization for Large Document Summarization</span>
+        <br>
+        <a href="https://github.com/jaisidhsingh/UVSumm-Video">Code</a>
+        /
+        <a href="https://huggingface.co/spaces/jaisidhsingh/cluster-summ">Deployed</a>
+        <p></p>
+        <p>
+        A high-utility project for the summarization of large articles, in a purely inference-based, plug-and-play manner. Utilizing hierarchical sentence clustering for extractive summarization, this was presented as the DL-Ops project for DL 2023 @ IIT Jodhpur.
+        </p>
+      </td>
+    </tr>
 
-		.content {
-			margin-top: 5vh;
-		}
+    <!-- LOWRES -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/projects/lowres.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:text-bottom">
+          <br><span class="papertitle">LowResFormer: A Transformer for Low Resolution Fine Grained Image Classification</span>
+        <br>
+        <a href="https://github.com/jaisidhsingh/LowResFormer-ViT">Code</a>
+        <!-- / -->
+        <!-- <a href="https://huggingface.co/spaces/jaisidhsingh/cluster-summ">Deployed</a> -->
+        <p></p>
+        <p>
+        A vision transformer architecture developed as my first self-research endeavour. Utilized multimodal inputs of images along with their attribute information, to classify images. Outperformed previous approached on the AwA2 dataset, in all resolutions.
+        </p>
+      </td>
+    </tr>
 
-		.pubs-table > tbody > tr {
-			display: flex;
-			flex-direction: column;
-			gap: 1vh;
-		}
-		.media-table > tbody > tr {
-			display: flex;
-			flex-direction: column;
-			gap: 1vh;
-		}
-
-		.card-body-left {
-			justify-content: center;
-			padding-right: 0;
-		}
-
-		.card-image {
-			width: 100%;
-			height: auto;
-		}
-
-		#projects {
-			padding-top: 0;
-		}
-
-		#projects > .card {
-			margin-bottom: 4vh;
-		}
-
-		#media > .card{
-			margin-bottom: 4vh;
-		}
-	}
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#top">Jaisidh Singh</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	<a class="navbar-brand" href="#publications">Publications</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	<a class="navbar-brand" href="#media">Media</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	<a class="navbar-brand" href="#projects">Projects</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	<!-- <a class="navbar-brand" href="https://drive.google.com/file/d/1uN5NtLg9PcrHn2j-Sup7XmxZNVHll4Kn/view?usp=sharing">CV</a> -->
-	<a class="navbar-brand" href="./assets/cv.pdf">CV</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	<a class="navbar-brand" href="#extracurricular">Extras</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-
-  <div class="container text-left content" style="padding-top: 30px;">
-	<!-- <div id="me"> -->
- 	<center> 
-	<img src="./assets/me.png" class="my-image">
-	<br><br>  
-	<h1>Jaisidh Singh</h1>
-    <p class="lead">Deep Learning Researcher</p>
-    	<a href="mailto:singh.118@iitj.ac.in"><img src="assets/email.png" class="gmail"></a> 
-	<a href="https://github.com/jaisidhsingh"><img src="assets/github.png" class="twitter"></a> 
-	<a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/"><img src="assets/linkedin.png" class="linkedin"></a>
-	<br><br>
-    <p>I am an undergraduate researcher at <a href="https://iitj.ac.in/">IIT Jodhpur</a>. 
-		Currently a research intern at <a href="https://www.bosch.com/research/about-research/research-locations/">Bosch Research Bangalore</a>
-		and <a href="http://iab-rubric.org/">Trusted AI Lab @ IIT Jodhpur</a>, 
-		I aim to leverage a <i>multidisciplinary approach</i> to research in deep learning. My experience and interests lie in <i>computer vision, interpretability, foundation models</i>, and <i>NLP</i>. 
-		Recent advances in <i>reinforcement learning</i> have also captured my interest. I am looking to work in these domains and to build fruitful, long-lasting collaborations, producing high-quality research work and publications.</p>
-    </center>
-	<!-- </div> -->
-	<div id="publications">
-	<h2><center>Publications</center></h2>
-	<br>
-	</div>
-	<div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/pubs/idprov.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>IdProv: Identity-Based Provenance for Synthetic Image Generation</b></h5>
-			<p class="card-text">Harshil Bhatia*, <b>Jaisidh Singh*</b>, Gaurav Sangwan, Aparna Bharati, Richa Singh, Mayank Vatsa</p>
-			<p class="card-text"><i>Accepted: AAAI Student Abstracts 2023</i> [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26942">Paper</a>]
-			[<a href="https://drive.google.com/file/d/1dInS1bwBerlcn9usIehFQQ7MNHX6IjAa/view?usp=sharing">Poster</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-    <br><br>
-	<!-- ----------------------- MEDIA --------------------------------------- -->
-	<div id="media">
-	<h2><center>Media</center></h2>
-	<br>
-	</div>
-	<div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/blogs/rl.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>Concepts of Reinforcement Learning</b></h5>
-			<p class="card-text">A presentation of my notes and tinkering with the <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm">DeepMind x UCL RL course</a>. 
-			I hope to aid the learning of others stepping into the wonderful field of RL. [<a href="https://jaisidhsingh.notion.site/Reinforcement-Learning-75c317c467f24c77bca20c1ce3980081?pvs=4">Blog</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-    <br><br>
-	<!-- ----------------------- PROJECTS --------------------------------------- -->
-	<div id="projects">
-	<h2><center>Projects</center></h2>
-	<br>
-	<!-- ------------------------------------------------ -->
-    <div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/projects/diff.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>
-				Multimodal Diffusion Models for Inpainting
-			</b></h5>
-			<p class="card-text">A modular, plug-and-play framework to organize my learning and experiments
-				with diffusion models. Includes flexible training and inference paradigms for DDPMs, LDMs on datasets like Stanford Cars,
-				LSUN Dining Rooms, along with Stable Diffusion inference. Grounded inpainting is also possible with built in Stable Diffusion and GLIGEN, supporting all 
-				of GLIGEN's tasks. Currently working on a custom framework for realistic editing and inpainting of driving scenes. 
-			</p>
-			<p class="card-text">[<a href="https://github.com/jaisidhsingh/Diffusion-Tinkering">Code</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-	<!-- --------------------------------------------------- -->
-    <div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/projects/uvsumm.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>
-				UV-Summ: Frame Scoring Using UNet-like Transformers for Deep Video Summarization
-			</b></h5>
-			<p class="card-text">My venture into video-based computer vision, starting with 
-				an architecture inspired by UNet for scoring CLIP frame features to extract key-frames.
-				Includes a zero-shot text summarizer using CLIP embeddings of the extracted key-frames. 
-				Our results outperformed recent approaches on the TvSumm datasets, and this was presented as the course project for Deep Learning 2023 @ IIT Jodhpur</p>
-			<p class="card-text">[<a href="https://github.com/jaisidhsingh/UVSumm-Video">Code</a>]
-				[<a href="https://drive.google.com/file/d/1BYx8bKjibz_X-srmgWK0ktgvjq72g-k8/view?usp=sharing">Report</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-	<!-- ------------------------------------------ -->
-	<div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/projects/multisumm.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>Beyond Token Limits: Inference-time Optimization for Large Document Summarization</b></h5>
-			<p class="card-text">A high-utility project for the summarization of large articles, in a purely inference-based, plug-and-play manner.
-				Utilizing hierarchical sentence clustering for extractive summarization, this was presented as the DL-Ops project for DL 2023 @ IIT Jodhpur</p>
-<p class="card-text">[<a href="https://github.com/jaisidhsingh/Cluster-Summarization-NLP">Code</a>]
-				[<a href="https://drive.google.com/file/d/1wGMoGhR6oYFAohU4RofbbstOK3jwsD1D/view?usp=sharing">Report</a>][<a href="https://huggingface.co/spaces/jaisidhsingh/cluster-summ">Deployed</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-	<!-- --------------------------------- -->
-     <div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/projects/lowres.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>LowResFormer: A Transformer for Low Resolution Fine Grained Image Classification</b></h5>
-			<p class="card-text">A vision transformer architecture developed as my first self-research endeavour. 
-			Utilized multimodal inputs of images along with their attribute information, to classify images.
-			Outperformed previous approached on the AwA2 dataset, in all resolutions.</p>
-			<p>[<a href="https://github.com/jaisidhsingh/LowResFormer-ViT">Code</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div>
-	<!-- ----------------------------------------------- -->
-     <div class="card">
-      <div class="card-body">
-		<table class="pubs-table"><tr>
-		<td class="pubs-cover">
-			<div class="card-body-left">
-				<img src="assets/projects/dqn.png" class="card-image">
-			</div>
-		</td>
-		<td class="pubs-description">
-			<h5 class="card-title"><b>Deep RL: Agents on Gym and Custom Environments</b></h5>
-			<p class="card-text">A project of self-implemented RL algorithms on OpenAI's Gym to gain an understanding of this field.
-				Implemented the DQN and Permutation Invariant Senory Transformer papers, and used this learning to apply DQN for the Course Project for Advanced Artificial Intelligence 2023 @ IIT Jodhpur.</p>
-			<p>[<a href="https://github.com/jaisidhsingh/Deep-Reinforcement-Learning">Code</a>]
-				[<a href="https://drive.google.com/file/d/1_ihKrfvfUhdPJ9hL7Z-8BUpYd7ZZLYRT/view?usp=sharing">Report</a>]</p>
-		</td></tr></table>
-	  </div>
-    </div> 
-	</div>  
-<!-- ------------------------------------------------ -->
-<br><br>
-<div id="extracurricular"><center><h2>Extras</h2><br>
-<p>I am an avid reader, and enjoy fiction and non-fiction, especially mythological and philosophical works.
-	I am also an experienced guitarist and vocalist. I have performed at large-scale events, including 
-	<a href=https://ignus.co.in/"">IGNUS</a> and <a href=https://www.instagram.com/interiit_culturals/"">Inter-IIT Cultural Meet</a> 
-	and as a Core Member and Mentor of
+    <!-- RL -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='assets/projects/lowres.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:0px;width:75%;vertical-align:text-bottom">
+          <br><span class="papertitle">Deep RL: Agents on Gym and Custom Environments</span>
+        <br>
+        <a href="https://github.com/jaisidhsingh/Deep-Reinforcement-Learning">Code</a>
+        <!-- / -->
+        <!-- <a href="https://huggingface.co/spaces/jaisidhsingh/cluster-summ">Deployed</a> -->
+        <p></p>
+        <p>
+        A project of self-implemented RL algorithms on OpenAI's Gym to gain an understanding of this field. Implemented the DQN and Permutation Invariant Senory Transformer papers, and used this learning to apply DQN for the Course Project for Advanced Artificial Intelligence 2023 @ IIT Jodhpur.
+        </p>
+      </td>
+    </tr>
+  
+    </tbody></table>
+   
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Extras</h2>
+                <p>
+               I am an avid reader, and enjoy fiction and non-fiction, especially mythological and philosophical works.
+	I am an experienced guitarist and vocalist. I have performed at large-scale events, including 
+	<a href=https://ignus.co.in/"">IGNUS</a> and <a href=https://www.instagram.com/interiit_culturals/"">Inter-IIT Cultural Meet</a>. As a Core Member and Mentor of
 	<a href="https://www.instagram.com/sangam_iitj/?hl=en">Sangam Music Society @ IIT Jodhpur</a> I have guided 3 batches of musicians of the society. 
 	I have contributed to published music as a composer and lyricist 
-	with <a href="https://open.spotify.com/artist/2ROjBiS2hPaSFWHDXEKA6N?si=sqYkeYCwSkqhRX6_0YpAYQ">Rajvir Singh Gill</a>, 
-	and am working on putting some of my original works on Spotify. As a person, I am drawn to collaborations and leadership roles,
+	with <a href="https://open.spotify.com/artist/2ROjBiS2hPaSFWHDXEKA6N?si=sqYkeYCwSkqhRX6_0YpAYQ">Rajvir Singh Gill</a>. As a person, I am drawn to collaborations and leadership roles,
 	and positions which allow me to help people. As a <a href="http://swc.iitj.ac.in/">Student Guide @ SWC IITJ (2021)</a>, I assumed 
 	continuous personal and professional mentorship of 10 students, and handled a junior batch of 500 students
 	with a team of 45. My varied range of interests and skills also made me a Core Member (2021) of <a href="https://www.instagram.com/quizsociitj/">Quiz Society</a>, 
-	<a href="https://www.instagram.com/litsociitj/">Literature Society</a>, and <a href="https://devluplabs.tech/#/">DevlUp Labs @ IITJ</a>.</p></center></div>
-<br><br>
-</body>
+	<a href="https://www.instagram.com/litsociitj/">Literature Society</a>, and <a href="https://devluplabs.tech/#/">DevlUp Labs @ IITJ</a>. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+      <!-- <tr>
+        <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+          <h2>Basically <br> Blog Posts</h2>
+        </td>
+        <td width="75%" valign="middle">
+          <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+          <br>
+          <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+          <br>
+          <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+          <br>
+          <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+        </td>
+      </tr>
+          
+            
+          </tbody></table> -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website template taken from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's github repository</a>. You may also use <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
