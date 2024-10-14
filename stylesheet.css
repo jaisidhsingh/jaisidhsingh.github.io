@@ -81,14 +81,14 @@ a:hover {
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  background-color: #fff;
+  background-color: #ffffff;
   /* transition: background 0.2s linear; */
   display: flex;
 }
 
 body.dark {
   /* background-color: #131821; */
-  background-color: #242424;
+  background-color: #091220;
   color: #fff;
 } /* #9b59b6 */
 
@@ -100,7 +100,7 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 
 .checkbox-label {
-  background-color: #bab9b9;
+  background-color: #bcc9d4;
   width: 50px;
   height: 26px;
   border-radius: 50px;
