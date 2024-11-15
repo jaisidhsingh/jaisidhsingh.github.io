@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaisidh Singh</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rGc5a4CZNrDyZM96D/AJLHaaLgMQp8rCw+3Mi6lO2eNg6bPqfgJInQFnZlA1a11K" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	display: flex;
+	font-family: monospace;
+	font-size: var(--vscode-markdown-font-size, 20px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 24px);
+	word-wrap: break-word;
+	/* margin-left: 500px;
+	margin-right: 500px; */
+	align-items: center; /* Center vertically */
+	justify-content: center; /* Center horizontally */
+	min-width: 300px;
+	margin-top: 3%; /* Remove default margins */
+	margin-bottom: 3%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #21a3fa;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* a:focus, */
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 12px;
+	background-color: #282828;
+	color: #ffffff;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #ffffff; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+	background-color: grey;
+	border-radius: 10%;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<!-- <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<span style="font-family: 'Fira Code', monospace; flex-grow: inherit; margin-left: 20%; margin-right: 20%;">
+<img src="assets/jaisidh-photo-small.png" style="float: left; width: 8%; height: 8%;margin-right: 1em; border-radius: 5%">
+<h2 id="jaisidh-singh"><strong>Jaisidh Singh</strong></h2>
+<br>
+<p>I am a MSc in ML student at the <a href="https://uni-tuebingen.de/en/">University of Tübingen</a>. 
+Previously, I have interned at <a href="https://www.bosch.com/research/">Bosch Research India</a> with <a href="https://www.bosch.com/research/about-bosch-research/our-research-experts/amit-kale/">Dr. Amit A. Kale</a> and <a href="https://www.linkedin.com/in/sonamsingh/">Sonam Singh</a>. I've also worked with <a href="http://home.iitj.ac.in/~richa/">Dr. Richa Singh</a>, <a href="http://home.iitj.ac.in/~mvatsa/">Dr. Mayank Vatsa</a>, and <a href="https://www.aparnabharati.com/">Dr. Aparna Bharati</a> during my undergrad at <a href="https://iitj.ac.in/">IIT Jodhpur</a>, where I majored in AI and Data Science.</p>
+<p>As a researcher, I work on a broad range of problems pertaining to <em><strong>how and what neural networks learn</strong></em>. To this end, I am currently collaborating with <a href="https://institute-tue.ellis.eu/research-groups/deep-models-and-optimization">ELLIS</a> and <a href="https://bknyaz.github.io/">Samsung Research Montreal</a> on hypernetworks for efficient training of for neural networks.</p>
+<p>In the past, my research has explored what multi-modal models learn through the lens of compositional reasoning, as well as how image-generation models can learn traceable sensitive information from the perspective of interpretability.</p>
+<p><a href="mailto:jaisidh.singh@student.uni-tuebingen.de">Email</a> / <a href="https://jaisidhsingh.github.io/assets/cv_latest.pdf">CV</a> / <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Scholar</a> / <a href="https://twitter.com/jaisidhsingh">Twitter</a> / <a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/">LinkedIn</a> / <a href="https://github.com/jaisidhsingh/">Github</a> / <a href="https://jaisidhsingh.bearblog.dev/blog/">Blog</a></p>
+<br>
+<h2 id="publications"><strong>Selected publications</strong></h2>
+<hr>
+<ol>
+<li><strong>Learning the Power of “No”: Foundation Models with Negations <em>[WACV 2025]</em></strong><br>
+Jaisidh Singh*, Ishaan Shrivastava*, Richa Singh, Mayank Vatsa, Aparna Bharati <br>
+(*: equal contribution) [<a>Paper</a>] [<a>GitHub: 20x⭐️</a>]</li>
+</ol>
+<ol start="2">
+<li><strong>SynthProv: Interpretable Framework for Profiling Identity Leakage <em>[WACV 2024]</em></strong><br>
+Jaisidh Singh, Harshil Bhatia, Richa Singh, Mayank Vatsa, Aparna Bharati <br>
+[<a>Paper</a>] [<a>Poster</a>] [<a>Presentation</a>]</li>
+</ol>
+<br>
+<h2 id="pet-projects--tinkering"><strong>Pet projects + tinkering</strong></h2>
+<hr>
+<ol>
+<li><strong>Differential Transformer in PyTorch</strong> <br>
+A simple snippet for multi-head differential attention in PyTorch.
+[<a>GitHub Gist</a>]</li>
+</ol>
+<ol start="2">
+<li><strong><code>pytorch-mixtures</code></strong> <br>
+A super clean implementation of MoE and MoD layers in PyTorch.
+[<a>GitHub: 20x⭐️</a>]</li>
+</ol>
+<ol start="3">
+<li><strong><code>lora-clip</code></strong> <br>
+A library to easily wrap LoRA layer insertion for CLIP.
+[<a>GitHub: 16x⭐️</a>]</li>
+</ol>
+<br>
+<h2 id="notes"><strong>Notes</strong></h2>
+<hr>
+<p>Still organising most of these. Will add soon.</p>
+</span>
+</body>
+</html>
