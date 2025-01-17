@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <title>CoN-CLIP - Jaisidh Singh - WACV 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root[data-theme="light"] {
+            --bg-color: #ffffff;
+            --text-color: #444444;
+            --secondary-text: #666666;
+            --section-bg: #f5f5f5;
+            --button-bg: #4a4a4a;
+            --button-text: white;
+            --button-hover: #666666;
+        }
+        
+        :root[data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --secondary-text: #b0b0b0;
+            --section-bg: #2d2d2d;
+            --button-bg: #4a4a4a;
+            --button-text: white;
+            --button-hover: #666666;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2em;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 0em;
+        }
+        
+        .authors {
+            text-align: center;
+            margin-bottom: 0em;
+        }
+        
+        .author {
+            margin: 0 0px;
+            font-size: 1.2em;
+        }
+        
+        .affiliations {
+            text-align: center;
+            margin-bottom: 0em;
+            color: var(--secondary-text);
+        }
+        
+        .links {
+            text-align: center;
+            margin: 2em 0;
+        }
+        
+        .link-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .link-button:hover {
+            background-color: var(--button-hover);
+        }
+        
+        .teaser {
+            width: 100%;
+            max-width: 800px;
+            margin: 2em auto;
+            display: block;
+        }
+        
+        .abstract {
+            margin: 0em 0;
+            text-align: justify;
+            padding: 20px;
+            background-color: var(--section-bg);
+            border-radius: 10px;
+        }
+        
+        .section {
+            margin: 2em 0;
+        }
+        
+        .bibtex {
+            background-color: var(--section-bg);
+            padding: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        .footer {
+            margin-top: 4em;
+            text-align: center;
+            color: var(--secondary-text);
+            font-size: 0.9em;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Icons for theme toggle */
+        .theme-toggle .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1em;
+            }
+            
+            .author {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <svg class="icon" viewBox="0 0 24 24">
+            <path class="sun" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 1.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-11a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v3a1 1 0 0 1-1 1zm0 12a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1zM3.99 12a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3zm14 0a1 1 0 1 1 0-2h3a1 1 0 0 1 0 2h-3zm-6.697 5.264a1 1 0 0 1-1.414 0l-2.122-2.122a1 1 0 0 1 1.414-1.414l2.122 2.122a1 1 0 0 1 0 1.414zm0-10.528a1 1 0 0 1 0-1.414l2.122-2.122a1 1 0 0 1 1.414 1.414L12.707 6.736a1 1 0 0 1-1.414 0zM6.808 17.192a1 1 0 0 1-1.414-1.414l2.122-2.122a1 1 0 0 1 1.414 1.414l-2.122 2.122zm10.384-10.384a1 1 0 0 1 1.414 1.414l-2.122 2.122a1 1 0 0 1-1.414-1.414l2.122-2.122z"/>
+        </svg>
+    </button>
+
+    <div class="title">
+        <img height="30%" width="30%" src="https://wacv2025.thecvf.com/wp-content/uploads/2024/06/WACV-2025-Logo_Color-1024x315.png">
+        <h1>Learning the Power of "No": Foundation Models with Negations</h1>
+    </div>
+
+    <div class="authors">
+        <span class="author">Jaisidh Singh<sup>1</sup></span>
+        <span class="author">Ishaan Shrivastava<sup>2</sup></span>
+        <span class="author">Mayank Vatsa<sup>3</sup></span>
+        <span class="author">Richa Singh<sup>3</sup></span>
+        <span class="author">Aparna Bharati<sup>4</sup></span>
+    </div>
+
+    <div class="affiliations">
+        <div><sup>1</sup>University of Tübingen, 
+        <sup>2</sup>Metafusion,  
+        <sup>3</sup>IIT Jodhpur, 
+        <sup>3</sup>IIT Jodhpur, 
+        <sup>2</sup>Lehigh University</div>
+    </div>
+    
+    <div class="links">
+        <a href="#" class="link-button">Paper</a>
+        <a href="https://github.com/jaisidhsingh/CoN-CLIP" class="link-button">Code & Data</a>
+        <a href="#" class="link-button">Poster</a>
+        <a href="#" class="link-button">Video</a>
+    </div>
+
+    <img src="assets/intro_figure_new.svg" alt="Project Teaser" class="teaser">
+
+    <h2>Abstract</h2>
+    <div class="abstract">
+        <p>
+            Negation is a fundamental aspect of natural language reasoning, yet foundational vision-language models (VLMs) like CLIP face significant challenges in accurately interpreting it. These models often process text prompts holistically, making it difficult to isolate and understand the role of negated terms. To overcome this limitation, we present CC-Neg: a novel dataset consisting of 228,246 images, each paired with both true captions and their corresponding negated versions. CC-Neg provides a critical benchmark to assess and improve foundational VLMs’ ability to process negations, focusing specifically on how the presence of terms like ‘not’ alters the semantic relationship between images and their textual descriptions. To illustrate the effectiveness of the CC-Neg dataset in enhancing negation understanding, we introduce the CoN-CLIP framework, which incorporates targeted modifications to CLIP’s contrastive loss function. When trained with CC-Neg, CoN-CLIP achieves a 3.85% average improvement in top-1 accuracy for zero-shot image classification across eight datasets, and a 4.4% performance boost on challenging compositionality benchmarks such as SugarCREPE. These results highlight CoN-CLIP’s enhanced understanding of the nuanced semantic relationships involving negation. Our code and the CC-Neg benchmark are available <a href="https://github.com/jaisidhsingh/CoN-CLIP">here</a>.
+        </p>
+    </div>
+
+    <!-- <div class="section">
+        <h2>Overview</h2>
+        <img src="/api/placeholder/800/300" alt="Method Overview" style="width:100%; max-width:800px; margin:20px auto; display:block;">
+        <p>
+            This section should provide a high-level overview of your method or approach. 
+            You can include diagrams, equations, or any other visual aids that help explain your work.
+        </p>
+    </div> -->
+
+    <!-- <div class="section">
+        <h2>Results</h2>
+        <img src="/api/placeholder/800/300" alt="Results" style="width:100%; max-width:800px; margin:20px auto; display:block;">
+        <p>
+            Present your key results here. You might want to include tables, graphs, or comparison figures.
+            Make sure to highlight the most significant findings and their implications.
+        </p>
+    </div> -->
+
+    <div class="section">
+        <h2>Citation</h2>
+        <div class="bibtex">
+@inproceedings{singh2024learning,
+    title={Learning the Power of "No": Foundation Models with Negations},
+    author={Singh, Jaisidh and Shrivastava, Ishaan and Vatsa, Mayank and Singh, Richa and Bharati, Aparna},
+    booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+    year={2025}
+}</div>
+    </div>
+
+    <div class="footer">
+        <p>Website template adapted from various academic project pages.</p>
+        <p>Last updated: January 2025</p>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            
+            // Store the preference
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</body>
+</html>
+
