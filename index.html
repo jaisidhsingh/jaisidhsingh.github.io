@@ -16,19 +16,18 @@
 body {
 	display: flex;
 	font-family: monospace;
-	font-size: var(--vscode-markdown-font-size, 18px);
+	font-size: var(--vscode-markdown-font-size, 16px);
 	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 24px);
+	line-height: var(--vscode-markdown-line-height, 20px);
 	word-wrap: break-word;
-	/* margin-left: 500px;
-	margin-right: 500px; */
 	align-items: center; /* Center vertically */
 	justify-content: center; /* Center horizontally */
-	min-width: 30%;
+	min-width: 40%;
 	margin-top: 3%; /* Remove default margins */
 	margin-bottom: 3%;
-	margin-left: 0;
-	margin-right: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+    background-color: #222222;
 }
 
 #code-csp-warning {
@@ -88,11 +87,11 @@ body.showEditorSelection li.code-line:hover:before {
 }
 
 .vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
+	border-left: 3px solid rgba(135, 135, 135, 0.4);
 }
 
 .vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
+	border-left: 3px solid rgba(122, 122, 122, 0.6);
 }
 
 .vscode-dark.showEditorSelection .code-line .code-line:hover:before {
@@ -117,11 +116,12 @@ img {
 }
 
 a {
-	color: #21a3fa;
+	color: #9f5df5;
 	text-decoration: none;
 }
 
 a:hover {
+    color: #c8a2f4;
 	text-decoration: underline;
 }
 
@@ -323,7 +323,7 @@ pre code {
  body {
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 0 12px;
-	background-color: #282828;
+	background-color: #111111;
 	color: #d8d8d8;
 }
 
@@ -359,7 +359,7 @@ code {
 :not(pre):not(.hljs) > code {
 	color: #ffffff; /* Change the old color so it seems less like an error */
 	font-size: inherit;
-	background-color: grey;
+	background-color: rgb(58, 46, 70);
 	border-radius: 10%;
 }
 
@@ -382,48 +382,52 @@ code {
           : 'default'
     });
   </script>
-<span style="font-family: Avenir, sans-serif; flex-grow: inherit; margin-left: 10%; margin-right: 10%;">
-<!-- <span style="font-family: 'Fira Code', monospace; flex-grow: inherit; margin-left: 10%; margin-right: 10%;"> -->
+<!-- <span style="font-family: Avenir, sans-serif; flex-grow: inherit; margin-left: 10%; margin-right: 10%;"> -->
+<span style="font-family: 'Fira Code', monospace; flex-grow: inherit; margin-left: 10%; margin-right: 10%;">
 <img src="assets/jaisidh-photo-small.png" style="float: left; width: 8%; height: 8%;margin-right: 1em; border-radius: 5%">
 <br>
 <h2 id="jaisidh-singh" style="color: #ffffff;"><strong>Jaisidh Singh</strong></h2>
 <br>
+<p>I work on a broad range of problems exploring the limits and applications of what neural networks can learn.</p>
+<!-- <br> -->
+<span><a href="mailto:jaisidh.singh@student.uni-tuebingen.de">Email</a> / <a href="./assets/resume.pdf">Resume</a> / <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Google Scholar</a> / <a href="https://twitter.com/jaisidhsingh">Twitter</a> / <a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/">LinkedIn</a> / <a href="https://github.com/jaisidhsingh/">Github</a> / <a href="https://jaisidhsingh.bearblog.dev">Blog</a></span>
 <br>
-I am an ML grad student at the <a href="https://uni-tuebingen.de/en/">University of Tübingen</a> 
-<span>exploring the limits of what neural networks can learn.</span> 
-My current research at <a href="https://institute-tue.ellis.eu/research-groups/deep-models-and-optimization">ELLIS</a> investigates <em>hypernetworks</em> with <a href="https://bknyaz.github.io/">Samsung Research Montreal</a>.
-<!-- <br><br> -->
-
-<span>In the past, I have worked on (i) compositionality in multimodal models, and (ii) generative models learning private information.</span>
 <br><br>
-<span><a href="mailto:jaisidh.singh@student.uni-tuebingen.de">Email</a> / <a href="./assets/resume.pdf">Resume</a> / <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Google Scholar</a> / <a href="https://twitter.com/jaisidhsingh">Twitter</a> / <a href="https://www.linkedin.com/in/jaisidh-singh-66175a201/">LinkedIn</a> / <a href="https://github.com/jaisidhsingh/">Github</a></span>
-<br><br>
-<h2 id="publications" style="color: #ffffff;"><strong>Selected research</strong></h2>
+<h4>About me</h4>
 <hr>
 <ul>
-	<li>
-		<strong style="color: #ffffff;">Hyper-Align: Efficient Modality Alignment via Hypernetworks <em></em><br> ICLR WSL Workshop 2025 (Poster)</strong> <br> <strong>Jaisidh Singh</strong>, Diganta Misra, Boris Knyazev, Antonio Orvieto.<br>[<a href="./research/hyperalign/hyperalign_new_poster.pdf">Poster</a>]
+    <li>Master's in ML @  <a href="https://uni-tuebingen.de/en/">University of Tübingen</a></li>
+    <li>Research @ <a href="https://www.tuebingen.mpg.de/84502/mpi-fuer-intelligente-systeme">MPI-IS Tübingen</a></li>
+    <li>Occasional guitarist, bassist, singer, writer</li>
+    <li>I enjoy doing (terrible) impressions</li>
+</ul>
+<br>
+<br>
+<h4 id="publications">Recent work</h4>
+<hr>
+<ul>
+    <li>
+        <a href="https://arxiv.org/pdf/2507.10015">(Almost) Free Modality Stitching of Foundation Models</a> ~ <em style="color: #ffffff;">pre-print</em> <br> <strong>Jaisidh Singh</strong>, Diganta Misra, Boris Knyazev, Antonio Orvieto.<br>
+        <span style="color: #929292;">→ Hypernetworks afford efficient and accurate multi-modal stitching of pre-trained models, shown for models like CLIP and GPT-4.</span>
 	</li>
+    <br>
+    <li><a href="https://www.computer.org/csdl/proceedings-article/wacv/2025/108300i009/25Knnm3Ssve">Learning the Power of “No”: Foundation Models with Negations</a> ~ <em style="color: #ffffff;">WACV 2025
+    </em><br><strong>Jaisidh Singh*</strong>, Ishaan Shrivastava*, Richa Singh, Mayank Vatsa, Aparna Bharati<br>
+    <span style="color: #929292">→ We benchmark CLIP via our proposed dataset CC-Neg to show that it does not understand negations in text. Also, CLIP benefits from negation-oriented fine-tuning that improves its negation understanding and overall compositionality.</span>
+    <!-- <br>[<a href="research/conclip/conclip.html">Project Page</a>] [<a href="https://arxiv.org/pdf/2403.20312">Preprint</a>] [<a href="https://github.com/jaisidhsingh/CoN-CLIP">GitHub</a>]</li> -->
 </ul>
-<ul>
-<li><strong style="color: #ffffff;">Learning the Power of “No”: Foundation Models with Negations <em>
-	</em><br>WACV 2025 (Poster)</strong> <br> <strong>Jaisidh Singh*</strong>, Ishaan Shrivastava*, Richa Singh, Mayank Vatsa, Aparna Bharati<br>[<a href="research/conclip/conclip.html">Project Page</a>] [<a href="https://arxiv.org/pdf/2403.20312">Preprint</a>] [<a href="https://github.com/jaisidhsingh/CoN-CLIP">GitHub</a>]</li>
-</ul>
-<ul>
-<li><strong style="color: #ffffff;">SynthProv: Interpretable Framework for Profiling Identity Leakage <em>
-</em><br> WACV 2024 (Poster)</strong> <br> <strong>Jaisidh Singh</strong>, Harshil Bhatia, Richa Singh, Mayank Vatsa, Aparna Bharati<br>[<a href="https://openaccess.thecvf.com/content/WACV2024/papers/Singh_SynthProv_Interpretable_Framework_for_Profiling_Identity_Leakage_WACV_2024_paper.pdf">Paper</a>] [<a href="https://drive.google.com/file/d/1RKdJTVw_gSOS-R2xAoaK9yQbGA1FmVyv/view?usp=sharing">Poster</a>] [<a href="https://drive.google.com/file/d/1AinWiJWQW_Esj4_J_u-5q_xJFdv09ReT/view?usp=sharing">Presentation</a>]</li>
-</ul>
-Refer to my <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Google Scholar</a> for a complete list (*: indicates equal contribution.)
-<br><br>
-<h2 id="pet-projects--tinkering" style="color: #ffffff;"><strong>Pet projects, notes, etc.</strong></h2>
+<p>🔔 Refer to my <a href="https://scholar.google.com/citations?user=Z6fahScAAAAJ">Google Scholar</a> for a complete list (*: equal contribution).</p>
+<br>
+<br>
+<h4 id="pet-projects--tinkering"><span>Pet projects, posts, etc.</span></h4>
 <hr>
 <ul>
-<li><strong><code>pytorch-mixtures</code></strong> [<a href="https://github.com/jaisidhsingh/pytorch-mixtures">GitHub</a>]<br>
+<li><span><code><a href="https://github.com/jaisidhsingh/pytorch-mixtures">pytorch-mixtures</a></code></span><br>
 A minimalist library for popular MoEs & MoD in PyTorch.<br>
 </li>
 </ul>
 <ul>
-<li><strong><code>lora-clip</code></strong> [<a href="https://github.com/jaisidhsingh/LoRA-CLIP">GitHub</a>]<br>
+<li><span><code><a href="https://github.com/jaisidhsingh/LoRA-CLIP">lora-clip</a></code></span><br>
 A library to easily wrap LoRA layer insertion for CLIP.<br>
 </li>
 </ul>
@@ -432,19 +436,19 @@ A library to easily wrap LoRA layer insertion for CLIP.<br>
 <!-- <p>Easy-to-follow walkthroughs and implementations.</p> -->
 <!-- <hr> -->
 <ul>
-<li><strong style="color: #ffffff;">Tutorial for "DINo: Continuous PDE forecasting with INRs"</strong><br>
-<span>I've recently made <a href="assets/DINo_continuous_pde_forecasting_with_INRs.html">an in-depth tutorial</a> on <a href="https://arxiv.org/abs/2209.14855">this cool physics-informed ML paper</a>.</span>
+<li><a href="assets/DINo_continuous_pde_forecasting_with_INRs.html">Tutorial for "DINo: Continuous PDE forecasting with INRs"</a><br>
+<span>I've recently made an in-depth tutorial on <a href="https://arxiv.org/abs/2209.14855">this cool physics-informed ML paper</a>.</span>
 </li>
 <br>
-<li><strong style="color: #ffffff;">Auto-<i>DE</i>coder in JAX</strong> [<a href="https://gist.github.com/jaisidhsingh/cc897deae6f1c3f0e0a807e8a40dbc14">GitHub Gist</a>]<br>
+<li><a href="https://gist.github.com/jaisidhsingh/cc897deae6f1c3f0e0a807e8a40dbc14">Auto-<i>DE</i>coder in JAX</a><br>
 A quick and easy walkthrough of the auto-<i>decoding</i> process with JAX.
 </li>
 <br>
-<li><strong style="color: #ffffff;">TokenFormer in PyTorch</strong> [<a href="https://gist.github.com/jaisidhsingh/2779712c9dd0ff01e41b1fb14d3f6c3a">GitHub Gist</a>]<br>
+<li><a href="https://gist.github.com/jaisidhsingh/2779712c9dd0ff01e41b1fb14d3f6c3a">TokenFormer in PyTorch</a><br>
 A crisp implementation of the TokenFormer Layer in PyTorch.
 </li>
 <br>
-<li><strong style="color: #ffffff;">Differential Transformer in PyTorch</strong> [<a href="https://gist.github.com/jaisidhsingh/806d53d0d086c4216148e41c961406c4">GitHub Gist</a>]<br>
+<li><a href="https://gist.github.com/jaisidhsingh/806d53d0d086c4216148e41c961406c4">Differential Transformer in PyTorch</a><br>
 A simple snippet for multi-head differential attention in PyTorch.
 </li>
 </ul>
