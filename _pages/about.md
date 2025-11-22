@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: 
 permalink: /
 nav: false
 subtitle:
@@ -27,4 +27,6 @@ I am a master's student at the University of Tübingen studying machine learning
 
 Coming from an engineering background, my approach to machine learning research is one that seeks to better understand the "bells-and-whistles" we add to modern neural networks to make them more practically useful and robust. 
 
-My research interests are primarily aligned with but not limited to **architecture design**, **reasoning**, and **efficient training** of foundation models. 
+My research interests are primarily aligned with but not limited to **architecture design**, **reasoning**, and **efficient training** of foundation models.
+
+If you're interested in collaborating or chatting about these topics, reach out to me via X or email. I like getting messages!
