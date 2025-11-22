@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a master's student at the University of Tübingen studying machine learning. I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/).
+I am a master's student at the University of Tübingen studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/).
 
-I'm interested in a broad range of problems that include but are not limited to architectural design and efficient training for foundation models.
+I'm interested in a broad range of problems that include but are not limited to **architectural design** and **efficient training** of foundation models.
