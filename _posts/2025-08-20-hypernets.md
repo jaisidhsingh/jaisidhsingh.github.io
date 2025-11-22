@@ -5,7 +5,7 @@ date: 2025-08-20
 description: Hypernetworks from the POV of INRs and functional similarity 
 tags: ml
 categories: ml
-featured: true
+featured: false
 ---
 
 ### TLDR
