@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+nav: false
 subtitle:
 
 profile:
