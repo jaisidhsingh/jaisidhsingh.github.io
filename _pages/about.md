@@ -25,4 +25,6 @@ latest_posts:
 
 I am a master's student at the University of Tübingen studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/).
 
-I'm interested in a broad range of problems that include but are not limited to **architectural design** and **efficient training** of foundation models.
+Coming from an engineering background, my approach to machine learning research is one that seeks to better understand the "bells-and-whistles" we add to modern neural networks to make them more practically useful and robust. 
+
+My research interests are primarily aligned with but not limited to **architecture design**, **reasoning**, and **efficient training** of foundation models. 
