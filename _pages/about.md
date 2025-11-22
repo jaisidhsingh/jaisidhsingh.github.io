@@ -29,3 +29,6 @@ Coming from an engineering background, my approach to machine learning research 
 My research interests are primarily aligned with but not limited to **architecture design**, **reasoning**, and **efficient training** of foundation models.
 
 If you're interested in collaborating or chatting about these topics, reach out to me via X or email. I like getting messages!
+
+<br>
+
