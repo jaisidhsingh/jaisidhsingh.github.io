@@ -4,8 +4,6 @@ title: About
 permalink: /
 subtitle:
 
-social: true # includes social icons at the bottom of the page 
-
 profile:
   align: right
   image: jaisidh-passport-photo.jpeg
