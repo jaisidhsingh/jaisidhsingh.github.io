@@ -156,16 +156,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-announcement-2",
-          title: 'Announcement_2',
+            },},{id: "news-started-a-research-assistantship-at-ellis-institute-tübingen",
+          title: 'Started a research assistantship at ELLIS Institute Tübingen',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-our-work-on-hypernetworks-and-multi-modal-foundation-models-accepted-to-emnlp-main-conference",
-          title: 'Our work on hypernetworks and multi-modal foundation models accepted to EMNLP Main Conference...',
+          section: "News",},{id: "news-work-done-during-ellis-research-assistantship-acceped-at-emnlp-2025-main",
+          title: 'Work done during ELLIS research assistantship acceped at EMNLP 2025 (Main)',
           description: "",
-          section: "News",},{id: "news-presented-our-work-on-hypernetworks-for-efficient-multi-modal-stitching-at-emnlp-2025-in-suzhou-china",
-          title: 'Presented our work on hypernetworks for efficient multi-modal stitching at EMNLP 2025 in...',
+          section: "News",},{id: "news-presented-our-work-on-hypernetworks-for-efficient-multi-modal-stitching-at-emnlp-2025",
+          title: 'Presented our work on hypernetworks for efficient multi-modal stitching at EMNLP 2025.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
