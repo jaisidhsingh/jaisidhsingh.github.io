@@ -35,10 +35,10 @@ where $s_1 \in [0, 1]$ is a score denoting the functional similarity between the
 However, let's think of another way to quantify the functional similarity between $f_A$ and $f_B$, specifically, by using a hypernetwork $H$ that predicts linear classifiers $W_A, W_B \in \mathbb{R}^{d\times k}$ on top of the two encoders $f_A, f_B$. Here, $k$ is the number of classes. 
 
 Writing, the composite function $g_j(\bullet) = W_j f_j(\bullet), \ j \in \{A, B\}$ to classify the inputs, we outline the scheme that let's the hypernetwork depict functional similarity between $f_A$ and $f_B$ as follows:
-- Given a dataset $\mathcal{D}$ and the current state of the hypernetwork's parameters $\phi^0$, predict $W^0_A, W^0_B = H_{\phi^0}(c_A), H_{\phi^0}(c_B)$ 
+- Given a dataset $\mathcal{D}$ and the current state of the hypernetwork's parameters $\phi^0$, predict $W^{0}_A, W^{0}_B = H_{\phi^0}(c_A), H_{\phi^0}(c_B)$ 
 - Obtain the classification loss of $g^0_A$ and $g^0_B$ on $\mathcal{D}$ as $\ell^0_A$ and $\ell^0_B$.
 - Train the hypernetwork's parameters $\phi$ only on encoder $f_A$ as $$\phi^1 \leftarrow \phi^0 - \eta \nabla_{\phi^0}\ell^0_A$$
-- Predict $W^1_A, W^1_B = H_{\phi^1}(c_A), H_{\phi^1}(c_B)$.
+- Predict $W^{1}_A, W^{1}_B = H_{\phi^1}(c_A), H_{\phi^1}(c_B)$.
 - Obtain the classification loss of  $g^1_A, g^1_B \text{ as } \ell^1_A, \ell^1_B$.
 - Then, the magnitude of $\Delta = \ell^0_B - \ell^1_B$ depicts the functional similarity between encoders $f_A$ and $f_B$.
 
