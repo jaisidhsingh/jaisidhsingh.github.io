@@ -38,7 +38,8 @@ Writing, the composite function $g_j(\bullet) = W_j f_j(\bullet), \ j \in \{A, B
 - Given a dataset $\mathcal{D}$ and the current state of the hypernetwork's parameters $\phi^0$, predict $W^0_A, W^0_B = H_{\phi^0}(c_A), H_{\phi^0}(c_B)$ 
 - Obtain the classification loss of $g^0_A$ and $g^0_B$ on $\mathcal{D}$ as $\ell^0_A$ and $\ell^0_B$.
 - Train the hypernetwork's parameters $\phi$ only on encoder $f_A$ as $$\phi^1 \leftarrow \phi^0 - \eta \nabla_{\phi^0}\ell^0_A$$
-- Predict $W^1_A, W^1_B = H_{\phi^1}(c_A), H_{\phi^1}(c_B)$ and obtain the classification loss of $g^1_A$ and $g^1_B$ as $\ell^1_A$ and $\ell^1_B$.
+- Predict $W^1_A, W^1_B = H_{\phi^1}(c_A), H_{\phi^1}(c_B)$.
+- Obtain the classification loss of  $g^1_A, g^1_B \text{ as } \ell^1_A, \ell^1_B$.
 - Then, the magnitude of $\Delta = \ell^0_B - \ell^1_B$ depicts the functional similarity between encoders $f_A$ and $f_B$.
 
 In other words, if training the hypernetwork *only* using network A lowers the loss of network B as well, then network A and B can be called functionally similar.
