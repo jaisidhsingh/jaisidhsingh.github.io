@@ -29,7 +29,7 @@ Hypernetworks can very well predict spatial functions given a timestep: $H(t) = 
 
 ### Hypernetworks as quantifiers of functional similarity
 
-Let's say that we wish to know the functional similarity between two encoders $f_A, $f_B: \mathbb{R}^{m} \to \mathbb{R}^{d}$. The most straightforward way to do this would be to collect a stack of encodings for $N$ inputs for each encoder and use a similarity function like Centered-Kernel-Alignment (CKA) on these features: $$s_1 = CKA(O_A, O_B) \ ; \quad O_A, O_B \in \mathbb{R}^{N\times d}$$
+Let's say that we wish to know the functional similarity between two encoders $f_A, f_B: \mathbb{R}^{m} \to \mathbb{R}^{d}$. The most straightforward way to do this would be to collect a stack of encodings for $N$ inputs for each encoder and use a similarity function like Centered-Kernel-Alignment (CKA) on these features: $$s_1 = CKA(O_A, O_B) \ ; \quad O_A, O_B \in \mathbb{R}^{N\times d}$$
 where $s_1 \in [0, 1]$ is a score denoting the functional similarity between the two models, and $O_A, O_B$ are the stacks of encoders for $N$ inputs.
 
 However, let's think of another way to quantify the functional similarity between $f_A$ and $f_B$, specifically, by using a hypernetwork $H$ that predicts linear classifiers $W_A, W_B \in \mathbb{R}^{d\times k}$ on top of the two encoders $f_A, f_B$. Here, $k$ is the number of classes. 
