@@ -32,14 +32,15 @@ Hypernetworks can very well predict spatial functions given a timestep: $H(t) = 
 Let's say that we wish to know the functional similarity between two encoders $f_A, f_B: \mathbb{R}^{m} \to \mathbb{R}^{d}$. The most straightforward way to do this would be to collect a stack of encodings for $N$ inputs for each encoder and use a similarity function like Centered-Kernel-Alignment (CKA) on these features: $$s_1 = CKA(O_A, O_B) \ ; \quad O_A, O_B \in \mathbb{R}^{N\times d}$$
 where $s_1 \in [0, 1]$ is a score denoting the functional similarity between the two models, and $O_A, O_B$ are the stacks of encoders for $N$ inputs.
 
-However, let's think of another way to quantify the functional similarity between $f_A$ and $f_B$, specifically, by using a hypernetwork $H$ that predicts linear classifiers $W_A, W_B \in \mathbb{R}^{d\times k}$ on top of the two encoders $f_A, f_B$. Here, $k$ is the number of classes. 
+However, let's think of another way to quantify the functional similarity between $f_A$ and $f_B$, specifically, by using a hypernetwork $H$ that predicts linear classifiers $W_A, W_B \in \mathbb{R}^{d\times k}$ on top of the two encoders $f_A, f_B$. Here, $k$ is the number of classes.
 
 Writing, the composite function $g_j(\bullet) = W_j f_j(\bullet), \ j \in \{A, B\}$ to classify the inputs, we outline the scheme that let's the hypernetwork depict functional similarity between $f_A$ and $f_B$ as follows:
 
-- Given a dataset $\mathcal{D}$ and the current state of the hypernetwork's parameters $\phi^0$, predict $W^{0}_A$, $W^{0}_B$ = $H_{\phi^0}(c_A)$, $H_{\phi^0}(c_B)$
+- Given a dataset $\mathcal{D}$ and the current state of the hypernetwork's parameters $\phi^0$, predict $$W^{0}_A \text{ , } W^{0}_B = H_{\phi^0}(c_A) \text{ , } H_{\phi^0}(c_B)$$
+
 - Obtain the classification loss of $g^0_A$ and $g^0_B$ on $\mathcal{D}$ as $\ell^0_A$ and $\ell^0_B$.
 - Train the hypernetwork's parameters $\phi$ only on encoder $f_A$ as $$\phi^1 \leftarrow \phi^0 - \eta \nabla_{\phi^0}\ell^0_A$$
-- Predict $W^{1}_A, W^{1}_B = H_{\phi^1}(c_A), H_{\phi^1}(c_B)$.
+- Then predict $$W^{1}_A \text{ , } W^{1}_B = H_{\phi^1}(c_A) \text{ , } H_{\phi^1}(c_B)$$
 - Obtain the classification loss of  $g^1_A, g^1_B \text{ as } \ell^1_A, \ell^1_B$.
 - Then, the magnitude of $\Delta = \ell^0_B - \ell^1_B$ depicts the functional similarity between encoders $f_A$ and $f_B$.
 
