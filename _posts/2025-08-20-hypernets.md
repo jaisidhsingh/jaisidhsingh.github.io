@@ -11,8 +11,6 @@ featured: false
 ### TLDR
 
 > we can interpret hypernetworks as (i) generators of implicit neural representations, (ii) quantifiers of functional similarities.
-<!-- > - generate implicit neural representations, and
-> - quantify functional similarity between models -->
 
 <hr>
 
