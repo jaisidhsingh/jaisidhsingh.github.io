@@ -9,9 +9,9 @@ featured: false
 ---
 
 ### TLDR
-**hypernetworks can be interpreted to**
-- **generate implicit neural representations, and**
-- **quantify functional similarity between models**
+> **hypernetworks can be interpreted to**
+> - **generate implicit neural representations, and**
+> - **quantify functional similarity between models**
 
 <hr>
 
