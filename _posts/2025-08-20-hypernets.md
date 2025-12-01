@@ -10,7 +10,7 @@ featured: false
 
 ### TLDR
 
-> we can interpret hypernetworks as (i) generators of implicit neural representations, (ii) quantifiers of functional similarities.
+> we can interpret hypernetworks as (i) generators of implicit neural representations, (ii) quantifiers of functional similarities between neural networks.
 
 <hr>
 
