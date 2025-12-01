@@ -9,13 +9,16 @@ featured: false
 ---
 
 ### TLDR
-> **hypernetworks can be interpreted to**
-> - **generate implicit neural representations, and**
-> - **quantify functional similarity between models**
+
+> we can interpret hypernetworks as (i) generators of implicit neural representations, (ii) quantifiers of functional similarities.
+<!-- > - generate implicit neural representations, and
+> - quantify functional similarity between models -->
 
 <hr>
 
 I've worked on hypernetworks (neural networks that parameterize other neural networks) for a little while, that has led to <a href="https://openreview.net/forum?id=dyRHRxcgXX">a workshop paper at ICLR 2025</a> and <a href="https://arxiv.org/pdf/2507.10015">a main conference paper at EMNLP 2025</a>. While working on these papers, I've had the time to think about hypernetworks in a couple of fascinating ways that I've described below.
+
+<br>
 
 ### Hypernetworks as generators of INRs
 
@@ -26,6 +29,8 @@ Hence, when learning several functions $f_1, \dots, f_n$, we can decide to predi
 This ability to conditionally generate INRs is what makes hypernetworks strongly applicable in physics-informed machine learning. In particular, we can see how the process is just another formuation of partial differential equations (PDEs), which denote time-varying functions of space $\nu_t(x)$ in differential form. 
 
 Hypernetworks can very well predict spatial functions given a timestep: $H(t) = \theta_t$ such that $g_{\theta_t}(x) = \nu_t(x)$ as they can conditionally generate an INR corresponding to the function at tilmestep $t$, and can be used to forecast PDEs. Indeed they've been used to do so in a very interesting <a href="https://arxiv.org/abs/2209.14855">NeurIPs paper</a> that I've presented in a tutorial <a href="https://jaisidhsingh.github.io/assets/DINo_continuous_pde_forecasting_with_INRs.html">here</a>.
+
+<br>
 
 ### Hypernetworks as quantifiers of functional similarity
 
