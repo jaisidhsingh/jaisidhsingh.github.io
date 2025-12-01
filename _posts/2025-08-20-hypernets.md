@@ -45,8 +45,6 @@ Writing, the composite function $g_j(\bullet) = W_j f_j(\bullet), \ j \in \{A, B
 
 In other words, if training the hypernetwork *only* using network A lowers the loss of network B as well, then network A and B can be called functionally similar.
 
-This is because the hypernetwork is able to parmaterise them well from a common state achieved using *only* network A.
-
 <hr>
 
 The above interpretations of hypernetworks are avenues that I think are rather under-utilised in the current literature, and can offer creative and potentially powerful ways of modulating neural networks. I'd be happy to know what you think of the above, or about parameter prediction in general. Hit my up for a chat on <a href="https://x.com/jaisidhsingh"> X/twitter</a> if you like.
