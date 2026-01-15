@@ -9,26 +9,24 @@ profile:
   image: me.jpg 
   image_circular: true # crops the image to make it circular
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 2 # leave blank to include all the blog posts
 ---
 
-I am a master's student at the University of Tübingen studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/).
+I am a master's student at the [University of Tübingen](https://uni-tuebingen.de) studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/). Previously, I was a research intern at [Bosch Research India](https://www.bosch.com/research/about-bosch-research/research-locations/) during my undergrad at [IIT Jodhpur](https://iitj.ac.in). 
 
-Coming from an engineering background, my approach to machine learning research is one that seeks to better understand the "bells-and-whistles" we add to modern neural networks to make them more practically useful and robust. 
+Coming from an engineering background, my approach to machine learning research seeks to harmonise applied and foundational research. My research focuses on, but is not limited to, **representation learning** and **efficient training** for foundation models.
 
-My research interests are primarily aligned with but not limited to **architecture design**, **reasoning**, and **efficient training** of foundation models.
-
-If you're interested in collaborating or chatting about these topics, reach out to me via X or email. I like getting messages!
+If you're interested in collaborating or chatting about these topics, reach out to me via [bluesky](https://bsky.app/profile/jaisidhsingh.bsky.social) or [email](jaisidh.singh@student.uni-tuebingen.de). I like getting messages!
 
 <br>
 
