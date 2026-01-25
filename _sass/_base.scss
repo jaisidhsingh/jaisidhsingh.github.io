@@ -919,18 +919,9 @@ pre {
   -webkit-overflow-scrolling: touch;
   white-space: pre;
   word-wrap: normal;
-
-  pre,
-  code {
-    background-color: transparent;
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 0;
-    white-space: inherit;
-  }
 }
 
-code {
+:not(pre) > code {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
@@ -939,6 +930,16 @@ code {
   // Inline code should wrap
   white-space: normal;
   word-wrap: break-word;
+}
+
+// background-color: transparent;
+// border-radius: 0;
+// margin-bottom: 0;
+// padding: 0;
+pre,
+code {
+  white-space: inherit;
+  word-wrap: normal;
 }
 
 // Transitioning Themes
