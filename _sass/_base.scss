@@ -929,6 +929,12 @@ pre {
   }
 }
 
+pre, 
+code {
+  white-space: pre !important;
+  display: block;
+}
+
 code {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
