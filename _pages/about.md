@@ -26,7 +26,7 @@ I am a master's student at the [University of Tübingen](https://uni-tuebingen.d
 
 Coming from an engineering background, my approach to deep learning research seeks to harmonise applied and foundational research. My interests primarily align with, but are not limited to, **representation learning** and **efficient training** for foundation models.
 
-If you're interested in collaborating or chatting about these topics, reach out to me via [bluesky](https://bsky.app/profile/jaisidhsingh.bsky.social) or [email](jaisidh.singh@student.uni-tuebingen.de). I like getting messages!
+If you're interested in collaborating or chatting about these topics, reach out to me via [bluesky](https://bsky.app/profile/jaisidhsingh.bsky.social) or [email](jaisidh.singh@student.uni-tuebingen.de). I like getting messages! For more information about my publications or work experience, you can check my [curriculum vitae](../assets/pdf/jaisidh_resume_web.pdf).
 
 <br>
 
