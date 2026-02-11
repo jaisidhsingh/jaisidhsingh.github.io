@@ -14,9 +14,9 @@ First, the instructor often breaks down seemingly complex scenarios into very di
 
 The second reason is something I've been thinking about for quite some time now. What trait or habit underlies the instructor's "make every interaction a positive one" superpower?
 
-Turns out the answer to this question was in front of me all this time, and was revealed to me at the start of the sixth lecture of the course: *celebration*. The instructor celebrates every moment of the lecture. He celebrates every question one would ask. He speaks with a perpetual smile on his face, the kind of smile that unmistakably comes from pure enjoyment of the moment at hand. 
+Turns out the answer to this question was in front of me all this time, and was revealed to me at the start of the sixth lecture of the course: *celebration*. The instructor celebrates every moment of the lecture. He celebrates every question one would ask. He speaks with a perpetual smile on his face that unmistakably comes from pure enjoyment of the moment at hand. 
 
 That's why it feels so good to interact with him, because he celebrates my questions, my research, my confusion, etc. The celebration and positivity is contagious: who'd dislike someone that genuinely enjoys the chance to include and to be included? I also feel this is strongly relevant to why there's no perceivable ego to him despite the fact that he's a genius (at least in my book). 
 
-This way of being is pervasive across philosophy. Krishna teaches in the Gita: when attachment, ego, and anxiety fall away, worldly engagements become light and almost “play-like”. Similarly, Abhinavagupta describes creation itself as a celebratory overflow of ānanda. It's one thing to read such ideas, it's another to witness them embodied. For that I'm very grateful.
+This way of being is pervasive across philosophy. Krishna teaches in the Gita: when attachment, ego, and anxiety fall away, worldly engagements become light and almost “play-like”. Similarly, Abhinavagupta describes creation itself as a celebratory overflow of ānanda. It's one thing to read such ideas but another to witness them embodied, and for that I'm very grateful.
 
