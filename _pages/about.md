@@ -18,8 +18,8 @@ announcements:
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 2 # leave blank to include all the blog posts
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 I am a master's student at the [University of Tübingen](https://uni-tuebingen.de) studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/). Previously, I was an intern at [Bosch Research India](https://www.bosch.com/research/about-bosch-research/research-locations/) during my undergrad at [IIT Jodhpur](https://iitj.ac.in). 
