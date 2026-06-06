@@ -7,19 +7,13 @@ tags: ml
 categories: architecture
 ---
 
-## A Brief History of Scaling Transformers & The Bitter Lesson
-
-**Just raw notes for now:**
-
-How have models scaled and what performance have they shown.
-
-GPT-1 → GPT-2/Pythia/GPT-NeoX → GPT-3/OPT/BLOOM+T5 → GPT-4/5/Llama/Qwen/Kimi.
-
-Scaling reliably is important, which is where scaling laws come in. The exponents tell us how much the loss decreases with increase in parameters and data samples. We ideally want them to be as high as possible.
+## Introduction 
 
 The bitter lesson that we get from scaling is that no matter the loss reduction we achieve via handcrafted methods relying upon heuristics from domain knowledge, there is more reduction to be gained by simply scaling up the model. This directly provides us with a definition of method "goodness": a method is general and good if it leverages computation better than previous methods. And so the best method would leverage compute maximally.
 
-This explains the dominance of the dense attention primitive in language modeling. While linear attention models do well at small scales, they fail to exhibit the performance and parameter efficiency at 100B+ scales. This is directly because of how the attention variants interact with computational hardware, that we understand below.
+But what does it mean to leverage compute well? Can we study this with simple mathematics that is easy to understand? How can we use them to as context to interpret the most dominant computational primitive in neural networks, i.e, attention, with the lens of compute? Can this interpretation explain recent breakthroughs in LLM architecture subject to present-day constraints of training LLMs? 
+
+This blog seeks to provide lightweight answers to these questions, given the recent advent of *hybrid LLMs*. First, we will take a look at the two most popular attention mechanisms (dense and linear) using asymptotic forms of the compute required for each. These forms will allow us to define quantities that will present a spectrum of properties between dense and linear attention. Finally, we will explain how hybrid LLMs allow us to traverse this spectrum, and beat the worst case every time. 
 
 ## Attention from the Perspective of Compute
 
@@ -56,7 +50,7 @@ $$
 \right)
 $$
 
-where $φ(·)$ is a learnable kernel with its own parameter $\mathbf{W}^{\phi} \in \mathbb{R}^{d\times d}$. Notice how only dense attention computes the product of queries and keys $\mathbf{Q}\mathbf{K}^\top$, an operation that is quadratic in $n$. Asymptotically, the compute $C$, measured by number of floating point operations (FLOPs), required by each formula follows
+where $\phi(·)$ is a learnable kernel with its own parameter $\mathbf{W}^{\phi} \in \mathbb{R}^{d\times d}$. Notice how only dense attention computes the product of queries and keys $\mathbf{Q}\mathbf{K}^\top$, an operation that is quadratic in $n$. Asymptotically, the compute $C$, measured by number of floating point operations (FLOPs), required by each formula follows
 
 $$
 C_{\text{dense}}
@@ -70,7 +64,7 @@ $$
 
 We now introduce three quantities to understand the differences between dense and linear attention.
 
-1. **Compute per Parameter (CPP).** Dividing the asymptotic expression for the FLOPs needed by $F$ by that of the parameter count, i.e. $d^2$, yields effective computations performed per parameter.
+1. **Compute per Parameter (CPP).** Dividing the asymptotic expression for the FLOPs needed by $\mathcal{F}$ by that of the parameter count, i.e. $d^2$, yields effective computations performed per parameter.
 
 $$
 CPP_{\text{dense}}
@@ -143,11 +137,11 @@ n^2 d + n d^2 + r n d^2
 n d^2 + \frac{n^2 d}{r+1}.
 $$
 
-Hence, compute per parameter for the hybrid LLM can be written as $CPP_{\text{hybrid}}^{(r)} = n + \frac{n^2}{d(r+1)}$. Clearly, the LLM relies purely on linear attention as $r$ increases, and $CPP_{\text{hybrid}}^{(r)} \to CPP_{\text{linear}} \qquad \text{as} \qquad r \to \infty$. Furthermore, $CPP_{\text{hybrid}}^{(r)} \to CPP_{\text{dense}}$ as $r \to 0$.
+Hence, compute per parameter for the hybrid LLM can be written as $CPP_{\text{hybrid}}^{(r)} = n + \frac{n^2}{d(r+1)}$. Clearly, the LLM relies purely on linear attention as $r$ increases, and $CPP_{\text{hybrid}}^{(r)} \to CPP_{\text{linear}} \text{ as } r \to \infty$. Furthermore, $CPP_{\text{hybrid}}^{(r)} \to CPP_{\text{dense}}$ as $r \to 0$.
 
 Similarly, $MCC_{\text{hybrid}}^{(r)} = (r+1)\,n^{-2}$, which can be found by solving a quadratic equation in $d$ and using a first-order Taylor expansion of the square root function (assuming $n \gg d$). This is quite significant: hybridization ratio $r$ gives us an $(r+1)\times$ larger effective model dimension than dense attention under fixed compute and context length.
 
-For arithmetic intensity, we suppose that the depth of the model is $L$. Then, $L/(r+1)$ layers will use dense attention and $rL/(r+1)$ layers will use linear attention. Thus, ${AR}^r_{\text{hybrid}}$ defined as the following weight average will approach ${AR}_{\text{dense}}$ as $r\to0$ and ${AR}_{\text{linear}}$ as $r\to\infty$. Clearly, the hybridization ratio $r$ affords a $(1+r\cdot h)/(1+r) \times$ gain over the worst.
+For arithmetic intensity, we suppose that the depth of the model is $L$. Then, $L/(r+1)$ layers will use dense attention and $rL/(r+1)$ layers will use linear attention. Thus, $AR^r_{{hybrid}}$ defined as the following weight average will approach $AR_{{dense}}$ as $r\to0$ and $AR_{{linear}}$ as $r\to\infty$. Clearly, the hybridization ratio $r$ affords a $(1+r\cdot h)/(1+r) \times$ gain over the worst.
 
 $$
 AR_{\text{hybrid}}^{(r)} = \frac{\frac{L}{r+1}\frac{d}{h} + \frac{rL}{r+1}d}{L}= \frac{d}{h}\left(\frac{1+r h}{1+r} \right).
