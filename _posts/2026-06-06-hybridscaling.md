@@ -9,7 +9,7 @@ categories: architecture
 
 ## Introduction 
 
-The bitter lesson that we get from scaling is that no matter the loss reduction we achieve via handcrafted methods relying upon heuristics from domain knowledge, there is more reduction to be gained by simply scaling up the model. This directly provides us with a definition of method "goodness": a method is general and good if it leverages computation better than previous methods. And so the best method would leverage compute maximally.
+The bitter lesson that we get from scaling is that you can gain more loss reduction from scaling up your model as opposed to relying on domain-specific heuristics. This directly allows us to define notions of algorithmic "goodness" and "generality" - a method is "good" if it leverages computation well within the current paradigm of hardware, and it is "general" if it allows one to leverage compute maximally in the limit (better hardware and different paradigms of computation becoming accessible over time).
 
 But what does it mean to leverage compute well? Can we study this with simple mathematics that is easy to understand? How can we use them to as context to interpret the most dominant computational primitive in neural networks, i.e, attention, with the lens of compute? Can this interpretation explain recent breakthroughs in LLM architecture subject to present-day constraints of training LLMs? 
 
