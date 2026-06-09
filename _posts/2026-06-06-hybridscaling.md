@@ -141,7 +141,7 @@ Hence, compute per parameter for the hybrid LLM can be written as $CPP_{\text{hy
 
 Similarly, $MCC_{\text{hybrid}}^{(r)} = (r+1)\,n^{-2}$, which can be found by solving a quadratic equation in $d$ and using a first-order Taylor expansion of the square root function (assuming $n \gg d$). This is quite significant: hybridization ratio $r$ gives us an $(r+1)\times$ larger effective model dimension than dense attention under fixed compute and context length.
 
-For arithmetic intensity, we suppose that the depth of the model is $L$. Then, $L/(r+1)$ layers will use dense attention and $rL/(r+1)$ layers will use linear attention. Thus, ${AR}^{r}_{hybrid}$ defined as the following weight average will approach ${AR}_{dense}$ as $r\to0$ and ${AR}_{linear}$ as $r\to\infty$. Clearly, the hybridization ratio $r$ affords a $(1+r\cdot h)/(1+r) \times$ gain over the worst.
+For arithmetic intensity, we suppose that the depth of the model is $L$. Then, $L/(r+1)$ layers will use dense attention and $rL/(r+1)$ layers will use linear attention. Thus, $AR_{\text{hybrid}}^{(r)}$ defined as the following weight average will approach $AR_{\text{dense}}$ as $r\to0$ and $AR_{\text{linear}}$ as $r\to\infty$. Clearly, the hybridization ratio $r$ affords a $(1+r\cdot h)/(1+r) \times$ gain over the worst.
 
 $$
 AR_{\text{hybrid}}^{(r)} = \frac{\frac{L}{r+1}\frac{d}{h} + \frac{rL}{r+1}d}{L}= \frac{d}{h}\left(\frac{1+r h}{1+r} \right).
