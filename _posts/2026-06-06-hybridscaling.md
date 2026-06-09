@@ -7,7 +7,8 @@ tags: ml
 categories: architecture
 ---
 
-## Introduction 
+## Introduction
+---
 
 The bitter lesson that we get from scaling is that you can gain more loss reduction from scaling up your model as opposed to relying on domain-specific heuristics. This directly allows us to define notions of algorithmic "goodness" and "generality" - a method is "good" if it leverages computation well within the current paradigm of hardware, and it is "general" if it allows one to leverage compute maximally in the limit (better hardware and different paradigms of computation becoming accessible over time).
 
@@ -16,6 +17,7 @@ But what does it mean to leverage compute well? Can we study this with simple ma
 This blog seeks to provide lightweight answers to these questions, given the recent advent of *hybrid LLMs*. First, we will take a look at the two most popular attention mechanisms (dense and linear) using asymptotic forms of the compute required for each. These forms will allow us to define quantities that will present a spectrum of properties between dense and linear attention. Finally, we will explain how hybrid LLMs allow us to traverse this spectrum, and beat the worst case every time. 
 
 ## Attention from the Perspective of Compute
+---
 
 To better understand what it means to leverage compute well, let us briefly bring our attention to the core unit responsible for compute: GPUs. At a high level, GPUs perform arithmetic operations in massive parallelism using streaming multiprocessors (SM) that each have low-latency on-chip caches via an L1 cache and SRAM (shared memory). SMs access data from a special kind of memory called high bandwidth memory (HBM) that is physically bonded to the GPU, and this is where data is initially stored and ultimately written back. However, accessing HBM is quite costly which is why an L2 cache is used an intermediate level between each SM's on-chip memory and HBM (which is off-chip). Typically, accessing data from HBM is about $10×$ and $5×$ slower than using L1 cache/SRAM and L2 cache respectively.
 
@@ -119,6 +121,7 @@ $$
 CPP and MCC show us a spectrum on which dense and linear attention lie at opposite ends: dense attention leverages more compute at the same number of parameters, while linear attention affords a higher effective model dimension given the same compute and context length. Also, since linear attention has an arithmetic intensity $h×$ that of dense attention, it implies significant memory savings while performing the same amount of compute.
 
 ## How the Scaling Era Informs Architecture Design
+---
 
 Today, we face different constraints than we did 2 years ago because compute is more available than ever and now the commodity that constrains us is high-quality data. Therefore in 2026, the strategy for scaling has changed: instead of scaling up all of $N, D$, and $C$ according to known scaling laws, the frontier of LLMs faces the incentive to find architectures that meet our data availability constraints. Therefore, practitioners are now motivated towards architectures that can match the performance of dense attention transformers with less data. Recently, *hybrid LLMs* have shown strong results in this space, now arriving at the forefront of popular open-source language models.
 
