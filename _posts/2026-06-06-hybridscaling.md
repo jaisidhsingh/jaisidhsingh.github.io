@@ -119,6 +119,7 @@ d.
 $$
 
 CPP and MCC show us a spectrum on which dense and linear attention lie at opposite ends: dense attention leverages more compute at the same number of parameters, while linear attention affords a higher effective model dimension given the same compute and context length. Also, since linear attention has an arithmetic intensity $h×$ that of dense attention, it implies significant memory savings while performing the same amount of compute.
+
 <br>
 
 ## How the Scaling Era Informs Architecture Design
