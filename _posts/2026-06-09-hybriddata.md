@@ -1,8 +1,8 @@
 ---
 layout: post
-title: What Hybrid Models Mean for Scaling 
-date: 2026-06-06
-description: What Scaling Laws For Hybrid LLMs Can Tell Us About Pretraining Mixtures
+title: What Scaling Laws For Hybrid LLMs Can Tell Us About Pretraining Mixtures 
+date: 2026-06-09
+description: Some thoughts on how scaling laws and data efficiency can guide data mixtures and choices. 
 tags: ml
 categories: architecture
 ---
