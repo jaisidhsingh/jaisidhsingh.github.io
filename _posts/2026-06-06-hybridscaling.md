@@ -66,7 +66,7 @@ $$
 
 We now introduce three quantities to understand the differences between dense and linear attention.
 
-1. **Compute per Parameter (CPP).** Dividing the asymptotic expression for the FLOPs needed by $\mathcal{F}$ by that of the parameter count, i.e. $d^2$, yields effective computations performed per parameter.
+- **Compute per Parameter (CPP).** Dividing the asymptotic expression for the FLOPs needed by $\mathcal{F}$ by that of the parameter count, i.e. $d^2$, yields effective computations performed per parameter.
 
 $$
 CPP_{\text{dense}}
@@ -84,7 +84,7 @@ CPP_{\text{linear}}
 n
 $$
 
-2. **Model Capacity under Fixed Compute (MCC).** This is defined as the model dimension $d$ written as a function of $n$ under fixed pre-defined compute $C$.
+- **Model Capacity under Fixed Compute (MCC).** This is defined as the model dimension $d$ written as a function of $n$ under fixed pre-defined compute $C$.
 
 $$
 C \sim n^2 d + n d^2 \implies d \sim \frac{C}{n^2} \ \text{so } \ MCC_{\text{dense}} = n^{-2} \quad \text{assuming} n \gg d
@@ -94,7 +94,7 @@ $$
 C \sim n d^2 \implies d \sim \sqrt{\frac{C}{n}} \ \text{so } MCC_{\text{linear}} = n^{-1/2}.
 $$
 
-3. **Arithmetic Intensity (AR).** This is defined as the ratio of the FLOPs required by an operation to the bytes of memory accessed by it.
+- **Arithmetic Intensity (AR).** This is defined as the ratio of the FLOPs required by an operation to the bytes of memory accessed by it.
 
 $$
 AR_{\text{dense}}
