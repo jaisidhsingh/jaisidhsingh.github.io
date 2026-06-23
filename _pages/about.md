@@ -28,6 +28,6 @@ I am currently working on **scaling behaviour** of hybrid-attention LLMs for my 
 
 I have also become quite interested in understanding how to build interfaces for better human-AI collaborative environments like agentic IDEs. For such a remarkable technology pushing us into a new age, we are still in the dark ages of UIs and interfaces that let humans *expand their own capacity for production without leaving the details of the creative loop* to AI. I'd like to see IDEs that go beyond requiring us to *read agent plans* to then integrate it into the cognitive graphs of our own workspace. Instead, it would be amazing to work with interfaces that reflect these graphs and allow AI agents to express their work within them. 
 
-If you're interested in collaborating or chatting about these topics, reach out to me via [email](jaisidh.singh@student.uni-tuebingen.de). I like getting messages! For more information about my publications or work experience, you can check my [curriculum vitae](../assets/pdf/jaisidh_resume_web.pdf).
+If you're interested in collaborating or chatting about these topics, reach out to me via [email](jaisidh.singh@student.uni-tuebingen.de). I like getting messages! For more information about my publications or work experience, you can check my [resume](../assets/pdf/jaisidh_resume_web.pdf).
 
 <br>
