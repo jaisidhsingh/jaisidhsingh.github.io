@@ -21,7 +21,6 @@ latest_posts:
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
-# I have also become quite interested in understanding how to build interfaces for better human-AI collaborative environments like agentic IDEs. For such a remarkable technology pushing us into a new age, we are still in the dark ages of UIs and interfaces that let humans *expand their own capacity for production without leaving the details of the creative loop* to AI. I'd like to see IDEs that go beyond requiring us to *read agent plans* to then integrate it into the cognitive graphs of our own workspace. Instead, it would be amazing to work with interfaces that reflect these graphs and allow AI agents to express their work within them. 
 ---
 
 I am a master's student at the [University of Tübingen](https://uni-tuebingen.de) studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/). Currently, I'm writing my master's thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at [Bosch Research India](https://www.bosch.com/research/about-bosch-research/research-locations/) during my undergrad at [IIT Jodhpur](https://iitj.ac.in).
