@@ -28,6 +28,6 @@ I am a master's student at the [University of Tübingen](https://uni-tuebingen.d
 
 I am currently working on **scaling behaviour** of [hybrid-attention LLMs](https://allenai.org/blog/olmohybrid) for my master's thesis with Dr. [Aaron Klein](https://aaronkl.github.io) from OpenEuroLLM. Particularly, I'm analysing how various ratios of linear-to-dense attention influences hyper-parameters across different scales. Pretraining and scaling behaviour influencing downstream choices for data mixtures reflect my primary interests. 
 
-If you're interested in collaborating or chatting about these topics, reach out to me via [email](mailto:jaisidh.singh@student.uni-tuebingen.de). I like getting messages! For more information about my publications or work experience, you can check my [resume](../assets/pdf/jaisidh_resume_web.pdf).
+If you're interested in collaborating or chatting about these topics, reach out to me via [email](mailto:jaisidh.singh@student.uni-tuebingen.de). For more information, you can check my [resume](../assets/pdf/jaisidh_resume_web.pdf).
 
 <br>
