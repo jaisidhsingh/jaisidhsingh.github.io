@@ -26,7 +26,7 @@ latest_posts:
 
 I am a master's student at the [University of Tübingen](https://uni-tuebingen.de) studying machine learning and a fellow at [Zuse School ELIZA](https://eliza.school). I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Antonio Orvieto](http://orvi.altervista.org/). Currently, I'm writing my master's thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at [Bosch Research India](https://www.bosch.com/research/about-bosch-research/research-locations/) during my undergrad at [IIT Jodhpur](https://iitj.ac.in).
 
-I am currently working on **scaling behaviour** of [hybrid-attention LLMs](https://allenai.org/blog/olmohybrid) for my master's thesis with Dr. [Aaron Klein](https://aaronkl.github.io) from OpenEuroLLM. Particularly, I'm analysing how various ratios of linear-to-dense attention influences hyper-parameters across different scales. Pretraining and scaling behaviour influencing downstream choices for data mixtures reflect my primary interests. 
+I am currently working on **scaling behaviour** of [hybrid-attention LLMs](https://allenai.org/blog/olmohybrid) for my master's thesis with Dr. [Aaron Klein](https://aaronkl.github.io) from OpenEuroLLM.
 
 If you're interested in collaborating or chatting about these topics, reach out to me via [email](mailto:jaisidh.singh@student.uni-tuebingen.de). For more information, you can check my [resume](../assets/pdf/jaisidh_resume_web.pdf).
 
