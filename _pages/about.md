@@ -29,6 +29,6 @@ latest_posts:
 I am an AI Research Intern at [Aleph Alpha](https://aleph-alpha.com) and a master's student at the [University of Tübingen](https://uni-tuebingen.de) studying machine learning. I'm also a guest researcher at the [Max Planck Institute for Intelligent Systems Tübingen](https://is.mpg.de) advised by [Dr. Antonio Orvieto](http://orvi.altervista.org/). My master's thesis is on the scaling behaviour of LLMs with hybrid attention with [Dr. Aaron Klein](https://aaronkl.github.io). Previously, I was a fellow at [Zuse School ELIZA](https://eliza.school). I also interned at [Bosch Research India](https://www.bosch.com/research/about-bosch-research/research-locations/) during my undergrad at [IIT Jodhpur](https://iitj.ac.in).
 
 
-If you're interested in collaborating or chatting about these topics, reach out to me via [email](mailto:jaisidh.singh@student.uni-tuebingen.de). For more information, you can check my [resume](../assets/pdf/jaisidh_resume_web.pdf).
+If you're interested in collaborating or chatting about these topics, reach out to me via [email](mailto:jaisidh.singh@student.uni-tuebingen.de). For more information, you can check my [resume](../assets/pdf/jaisidh_resume_latest.pdf).
 
 <br>
